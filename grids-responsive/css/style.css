@@ -1,0 +1,136 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin-bottom:40px;
+}
+
+.container {
+    /* width of 100% allows the container to respond to small screen sizes */
+    width:100%;
+    /* max-width of 1000px caps the container at 1000px */
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.row {
+    overflow:hidden;
+}
+
+h1 {
+    color:#FF0000;
+}
+
+h1 small {
+    color:#CCCCCC;
+    font-size:15px;
+}
+
+a {
+    text-decoration:none;
+    color:#FF0000;
+}
+
+.col-2, .col-8, .col-4 {
+    float:left;
+    box-sizing:border-box;
+}
+
+.col-2 {
+    width:16.6666666666%;
+}
+
+.col-8 {
+    width:66.66666666666%;
+}
+
+.col-4 {
+    width:33.33333333%;
+}
+
+.txt-center {
+    text-align:center;
+}
+
+.nav a {
+    display:block;
+    padding:15px;
+    background-color:#000;
+    color:#FFF;
+    font-size:18px;
+    text-decoration:none;
+    border-right:#FFF 1px solid;
+}
+
+h2 {
+    font-size:25px;
+}
+
+.nav a:hover {
+    color:#990000;
+}
+
+.text-muted {
+    color:#CCC;
+}
+
+.blog-image {
+    display:block;
+    width:100%;
+}
+
+.blog-text::first-letter {
+    font-size:100px;
+    margin:-25px 20px -25px 0;
+    float:left;
+    color:#CCC;
+}
+
+.txt-right {
+    text-align:right;
+}
+
+.divider {
+    border-top:#CCC 1px solid;
+    margin:20px 0 20px 0;
+}
+
+.sub-nav {
+    padding:0;
+    list-style:none;
+    margin-top:30px;
+}
+
+.sub-nav li {
+    display:inline;
+    border-right:#CCC 1px solid;
+    padding:0 5px 0 7px;
+}
+
+.sub-nav li:first-child {
+    padding-left:0;
+}
+
+.sub-nav li:last-child {
+    border-right:none;
+}
+
+.gray-text {
+    color:#999;
+}
+
+.responsive-padding-left-45 {
+    padding-left:45px;
+}
+
+/* When the screen size drops below 720px stack the columns */
+@media(max-width: 720px) {
+    .col-2, .col-8, .col-4 {
+        width:100%;
+    }
+
+    .responsive-padding-left-45 {
+        padding-left:0;
+    }
+}
